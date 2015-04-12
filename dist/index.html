@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+    <title>The Portfolio of Grace Tuttle</title>
+    <meta content="Grace is a designer working in Brooklyn, New York on urban, humanitarian, and education sections. Her practice is participatory, inviting partners--experts, children, community members, policy makers, administrators, and educators--into the design process as collaborators. She has a BA in Anthropology from Bard College and an MFA from the Transdisciplinary Design program at Parsons The New School for Design." name="description">
+    <base target="_blank">
+    <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+  </head>
+  <body class="is-loading">
+    <nav class="nav">
+      <div class="top nav__button"><a href="#top" class="nav__link">
+          <div class="nav__symbol"><i class="fa fa-home"></i></div></a></div>
+      <div class="prev nav__button mobile-only"><a href="#prev" class="nav__link">
+          <div class="nav__symbol"><i class="fa fa-chevron-up"></i></div></a></div>
+      <div class="next nav__button mobile-only"><a href="#next" class="nav__link">
+          <div class="nav__symbol"><i class="fa fa-chevron-down"></i></div></a></div>
+      <div class="contact nav__button"><a href="#contact" class="nav__link">
+          <div class="nav__symbol"><i class="fa fa-envelope"></i></div></a></div>
+    </nav>
+    <div class="container">
+      <div id="top" class="section section--top">
+        <div class="badge">
+          <h1>GRACE VETROCQ TUTTLE</h1>
+          <h4>designer.researcher.strategist</h4>
+        </div>
+      </div>
+      <div id="contact" class="section section--contact">
+        <div class="section__container">
+          <div class="section__subject">
+            <h2>Contact Me!</h2>
+          </div>
+          <form method="post" name="contactform" class="form">
+            <fieldset>
+              <div class="form__input">
+                <label>Your Name</label>
+                <input id="name" type="text" name="name" required="">
+              </div>
+              <div class="form__input">
+                <label>Your Email</label>
+                <input id="email" type="text" name="email" required="">
+              </div>
+              <div class="form__input">
+                <label>Your Comment</label>
+                <textarea id="text" name="text" rows="6"></textarea>
+              </div>
+            </fieldset>
+            <button class="form__submit">
+              <div class="form__submit__default">Send Message</div>
+              <div class="form__submit__loading">Loading...</div>
+              <div class="form__submit__success">Message sent!</div>
+              <div class="form__submit__error">Please check your email address.</div>
+              <div class="form__submit__fail">Message failed to send.</div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="more"></div>
+    <script src="scripts/app.js"></script>
+    <script id="home-template" type="text/x-handlebars-template">
+      <div id="about" class="section section--about">
+        <div class="section__container">
+          <div class="section__subject">
+            <h2>About</h2>
+          </div>
+          <div class="section__markdown">{{#if Content}}{{paragraphSplit Content}}{{/if}}</div>
+          <p><a href="{{CV}}" target="_blank">Download My CV &#187;</a></p>
+        </div>
+      </div>
+    </script>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div id="{{SLUG}}" class="section section--{{SLUG}}">
+        <div class="section__container">
+          <div class="section__tags">{{#if TAGS}}{{commalist TAGS}}{{/if}}</div>
+          <div class="section__subject">
+            <h2>{{TITLE}}</h2>
+            <div class="company">{{#if COMPANY}} w/ {{COMPANY}}{{/if}}</div>
+          </div>
+          <div class="section__slider-container">
+            <ul class="section__slider">{{#if IMAGES}}{{imagelist IMAGES}}{{/if}}</ul>
+          </div>
+          <div class="section__markdown">{{#if CONTENT}}{{paragraphSplit CONTENT}}{{/if}}</div>
+        </div>
+      </div>
+    </script>
+    <script id="button-template" type="text/x-handlebars-template">
+      <div data-for="{{SLUG}}" class="nav__button desktop-only nav__button--{{SLUG}}"><a href="#{{SLUG}}" class="nav__link">
+          <div class="nav__symbol"><i class="fa fa-chevron-down"></i></div></a>
+        <div class="nav__info">{{SLUG}}</div>
+      </div>
+    </script>
+  </body>
+</html>

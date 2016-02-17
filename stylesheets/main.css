@@ -2986,79 +2986,77 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 36px;
   line-height: 1;
-  -moz-text-align-last: justify;
-  text-align-last: justify;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
   color: white;
 }
 
-/* line 54, ../../src/stylesheets/partials/_general.scss */
+/* line 52, ../../src/stylesheets/partials/_general.scss */
 h2 {
   font-size: 36px;
   line-height: 48px;
 }
 
-/* line 59, ../../src/stylesheets/partials/_general.scss */
+/* line 57, ../../src/stylesheets/partials/_general.scss */
 h3 {
   font-size: 24px;
   line-height: 24px;
 }
 
-/* line 64, ../../src/stylesheets/partials/_general.scss */
+/* line 62, ../../src/stylesheets/partials/_general.scss */
 h4 {
   font-size: 12px;
   line-height: 24px;
 }
 
-/* line 69, ../../src/stylesheets/partials/_general.scss */
+/* line 67, ../../src/stylesheets/partials/_general.scss */
 a {
   text-decoration: none;
   color: #16a085;
 }
 
-/* line 74, ../../src/stylesheets/partials/_general.scss */
+/* line 72, ../../src/stylesheets/partials/_general.scss */
 em {
   font-style: italic;
 }
 
-/* line 78, ../../src/stylesheets/partials/_general.scss */
+/* line 76, ../../src/stylesheets/partials/_general.scss */
 ol {
   margin: 20px 10px;
 }
 
-/* line 82, ../../src/stylesheets/partials/_general.scss */
+/* line 80, ../../src/stylesheets/partials/_general.scss */
 ol li {
   padding-left: 12px;
   margin-bottom: 12px;
 }
 
-/* line 87, ../../src/stylesheets/partials/_general.scss */
+/* line 85, ../../src/stylesheets/partials/_general.scss */
 ol li:before {
   content: "• ";
   color: #dd7022;
   /* or whatever color you prefer */
 }
 
-/* line 92, ../../src/stylesheets/partials/_general.scss */
+/* line 90, ../../src/stylesheets/partials/_general.scss */
 p {
   font-size: 18px;
   line-height: 36px;
   margin-bottom: 24px;
 }
 
-/* line 98, ../../src/stylesheets/partials/_general.scss */
+/* line 96, ../../src/stylesheets/partials/_general.scss */
 blockquote {
   font-family: 'Open Sans', sans-serif;
   position: relative;
   margin-bottom: 24px;
 }
 @media screen and (min-width: 640px) {
-  /* line 98, ../../src/stylesheets/partials/_general.scss */
+  /* line 96, ../../src/stylesheets/partials/_general.scss */
   blockquote {
     padding: 24px 24px;
   }
 }
-/* line 108, ../../src/stylesheets/partials/_general.scss */
+/* line 106, ../../src/stylesheets/partials/_general.scss */
 blockquote:before, blockquote:after {
   font-family: "Roboto Slab", serif;
   color: #efefef;
@@ -3066,36 +3064,36 @@ blockquote:before, blockquote:after {
   font-size: 36px;
   font-weight: 700;
 }
-/* line 117, ../../src/stylesheets/partials/_general.scss */
+/* line 115, ../../src/stylesheets/partials/_general.scss */
 blockquote:before {
   content: "\201C";
   top: -12px;
   left: -12px;
 }
 @media screen and (min-width: 640px) {
-  /* line 117, ../../src/stylesheets/partials/_general.scss */
+  /* line 115, ../../src/stylesheets/partials/_general.scss */
   blockquote:before {
     top: 12px;
     left: 12px;
   }
 }
-/* line 132, ../../src/stylesheets/partials/_general.scss */
+/* line 130, ../../src/stylesheets/partials/_general.scss */
 blockquote > blockquote {
   margin-bottom: 0;
   padding: 0;
 }
-/* line 135, ../../src/stylesheets/partials/_general.scss */
+/* line 133, ../../src/stylesheets/partials/_general.scss */
 blockquote > blockquote:before {
   content: '';
 }
-/* line 139, ../../src/stylesheets/partials/_general.scss */
+/* line 137, ../../src/stylesheets/partials/_general.scss */
 blockquote > blockquote:after {
   content: "\201D";
   top: -36px;
   right: -12px;
 }
 
-/* line 149, ../../src/stylesheets/partials/_general.scss */
+/* line 147, ../../src/stylesheets/partials/_general.scss */
 hr {
   border: 0;
   border-top: 1px rgba(0, 0, 0, 0.05) solid;
@@ -3104,18 +3102,18 @@ hr {
   margin: 30px auto;
 }
 
-/* line 157, ../../src/stylesheets/partials/_general.scss */
+/* line 155, ../../src/stylesheets/partials/_general.scss */
 label {
   display: block;
   margin-bottom: 5px;
 }
 
-/* line 162, ../../src/stylesheets/partials/_general.scss */
+/* line 160, ../../src/stylesheets/partials/_general.scss */
 :-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #efefef inset;
 }
 
-/* line 166, ../../src/stylesheets/partials/_general.scss */
+/* line 164, ../../src/stylesheets/partials/_general.scss */
 input[type='text'], textarea {
   -webkit-appearance: none;
   background-color: #efefef;
@@ -3128,40 +3126,40 @@ input[type='text'], textarea {
   vertical-align: middle;
   max-width: 320px;
 }
-/* line 178, ../../src/stylesheets/partials/_general.scss */
+/* line 176, ../../src/stylesheets/partials/_general.scss */
 input[type='text']:focus, textarea:focus {
   outline: 0;
 }
 
-/* line 183, ../../src/stylesheets/partials/_general.scss */
+/* line 181, ../../src/stylesheets/partials/_general.scss */
 input[type='submit'] {
   -webkit-appearance: none;
 }
 
-/* line 187, ../../src/stylesheets/partials/_general.scss */
+/* line 185, ../../src/stylesheets/partials/_general.scss */
 textarea {
   max-width: 100%;
   height: auto;
 }
 
-/* line 192, ../../src/stylesheets/partials/_general.scss */
+/* line 190, ../../src/stylesheets/partials/_general.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 196, ../../src/stylesheets/partials/_general.scss */
+/* line 194, ../../src/stylesheets/partials/_general.scss */
 b, strong {
   font-weight: bold;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 200, ../../src/stylesheets/partials/_general.scss */
+  /* line 198, ../../src/stylesheets/partials/_general.scss */
   .container {
     margin-right: 50px;
   }
 }
 
-/* line 207, ../../src/stylesheets/partials/_general.scss */
+/* line 205, ../../src/stylesheets/partials/_general.scss */
 .is-loading {
   display: none;
 }
@@ -3267,12 +3265,11 @@ b, strong {
   }
   /* line 90, ../../src/stylesheets/partials/_navigation.scss */
   .nav__link:hover + .nav__info {
-    margin-top: 7px;
     opacity: 1;
   }
 }
 
-/* line 98, ../../src/stylesheets/partials/_navigation.scss */
+/* line 97, ../../src/stylesheets/partials/_navigation.scss */
 .nav__symbol {
   display: block;
   position: absolute;
@@ -3291,33 +3288,33 @@ b, strong {
   transform-origin: center;
 }
 @media screen and (min-width: 640px) {
-  /* line 114, ../../src/stylesheets/partials/_navigation.scss */
+  /* line 113, ../../src/stylesheets/partials/_navigation.scss */
   .nav__symbol:hover {
     color: #333;
   }
 }
-/* line 119, ../../src/stylesheets/partials/_navigation.scss */
+/* line 118, ../../src/stylesheets/partials/_navigation.scss */
 .nav__symbol.up {
   -webkit-transform: translate(-50%, -50%) rotate(180deg);
   transform: translate(-50%, -50%) rotate(180deg);
 }
-/* line 123, ../../src/stylesheets/partials/_navigation.scss */
+/* line 122, ../../src/stylesheets/partials/_navigation.scss */
 .nav__symbol.left {
   color: #333;
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
   transform: translate(-50%, -50%) rotate(90deg);
 }
-/* line 128, ../../src/stylesheets/partials/_navigation.scss */
+/* line 127, ../../src/stylesheets/partials/_navigation.scss */
 .nav__symbol.down {
   -webkit-transform: translate(-50%, -50%) rotate(0deg);
   transform: translate(-50%, -50%) rotate(0deg);
 }
-/* line 132, ../../src/stylesheets/partials/_navigation.scss */
+/* line 131, ../../src/stylesheets/partials/_navigation.scss */
 .nav__symbol .fa {
   display: block;
 }
 
-/* line 137, ../../src/stylesheets/partials/_navigation.scss */
+/* line 136, ../../src/stylesheets/partials/_navigation.scss */
 .nav__info {
   position: absolute;
   background: #333;
@@ -3329,8 +3326,12 @@ b, strong {
   z-index: 999;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  white-space: nowrap;
 }
-/* line 149, ../../src/stylesheets/partials/_navigation.scss */
+/* line 151, ../../src/stylesheets/partials/_navigation.scss */
 .nav__info:after {
   width: 0;
   height: 0;

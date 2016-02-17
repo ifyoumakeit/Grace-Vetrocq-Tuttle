@@ -59,11 +59,9 @@ OnePager =
     else
       @$CURRENT = $(id)
 
-
     @$CURRENT.velocity 'scroll',
       easing: 'ease-in-out'
       duration: 500
-
 
   growProjects: ->
     $('.section').css 'min-height', $(window).height()

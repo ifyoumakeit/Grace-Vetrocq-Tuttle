@@ -6,6 +6,7 @@ var gulp            = require('gulp'),
     reload      = browserSync.reload,
     del         = require('del'),
     marked      = require('marked'),
+    ghPages     = require('gulp-gh-pages'),
     browserifyHandlebars = require('browserify-handlebars');
 
 gulp.task('browser-sync', function() {
@@ -80,3 +81,8 @@ gulp.task('serve', ['build', 'browser-sync'], function () {
 });
 
 gulp.task('default', ['serve']);
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});

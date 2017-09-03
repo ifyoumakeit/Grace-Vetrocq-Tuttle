@@ -21,7 +21,7 @@
   @media screen and (min-width: $min-width) {
     top: -70px;
     left: auto;
-    height: 100%;
+    height: calc(100% + 55px);
     width: $nav-width-desktop;
   }
 
@@ -89,6 +89,7 @@
 
       & + .nav__info {
         opacity: 1;
+        right: 60px;
       }
     }
   }
@@ -138,7 +139,7 @@
   background: $color-text;
   color: white;
   padding: 0 10px;
-  right: 60px;
+  right: -9999px;
   margin-top: 0px;
   font-size: 10px;
   z-index: 999;

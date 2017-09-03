@@ -28,6 +28,7 @@ gulp.task('compass', function() {
         browsers: ['last 2 versions'],
         cascade: false
     }))
+    .pipe($.minifyCss())
     .pipe(gulp.dest('dist/stylesheets'))
     .pipe(reload({stream: true}));
 });
@@ -46,6 +47,7 @@ gulp.task('coffee', function() {
       transform: ['coffeeify', browserifyHandlebars],
       extensions: ['.coffee']
     }))
+    .pipe($.uglify())
     .pipe( $.rename('app.js') )
     .pipe( gulp.dest('dist/scripts') );
 });

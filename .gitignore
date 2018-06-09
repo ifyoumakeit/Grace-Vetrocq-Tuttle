@@ -1,9 +1,0 @@
-*.scssc
-.sass-cache/
-node_modules/
-src/bower_components/
-.DS_Store
-.firebaserc
-.publish/
-dist/
-firebase.json

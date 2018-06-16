@@ -2,6 +2,7 @@
   --color-primary: #5d0327;
   --color-secondary: #030028;
   --color-highlight: #9d0527;
+  --color-bg: #f6f6f6;
 }
 
 * {
@@ -25,7 +26,7 @@ body {
   color: var(--color-secondary);
 }
 
-main {
+.main {
   border-radius: 0.4rem;
   overflow: hidden;
   display: flex;
@@ -34,44 +35,41 @@ main {
   text-align: center;
 }
 
-section {
+.section {
   max-width: 800px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-}
-
-article {
-  background: #f6f6f6;
+  background: var(--color-bg);
   transform: rotate(-10deg);
   padding: 5rem 2.5rem;
 }
 
-header {
+.header {
   transform: rotate(10deg);
 }
 
-h1 {
+.title {
   font-size: 20vw;
   line-height: 0.8;
   margin: 0 0 1rem 0;
   font-weight: 600;
 }
 
-h1 span:nth-child(1) {
-  color: var(--color-highlight);
-}
-
-h1 span:nth-child(2) {
-  color: var(--color-primary);
-}
-
-h1 span {
+.title__word {
   display: block;
 }
 
-h2 {
+.title__word:nth-child(1) {
+  color: var(--color-highlight);
+}
+
+.title__word:nth-child(2) {
+  color: var(--color-primary);
+}
+
+.subtitle {
   font-size: 8vw;
   font-weight: 200;
   line-height: 1;
@@ -79,13 +77,13 @@ h2 {
   color: var(--color-primary);
 }
 
-form {
+.form {
   padding: 0 2rem 0 0;
   font-size: 2rem;
   transform: rotate(10deg);
 }
 
-label {
+.label {
   /* Accessibility hidden */
   border: 0;
   clip: rect(0 0 0 0);
@@ -97,7 +95,7 @@ label {
   width: 1px;
 }
 
-input {
+.input {
   font-size: 5vw;
   color: var(--color-primary);
   padding: 1rem 1.5rem;
@@ -110,7 +108,7 @@ input {
   font-weight: 200;
 }
 
-button {
+.button {
   background-color: var(--color-highlight);
   border: 1px solid var(--color-highlight);
   font-weight: 200;
@@ -126,36 +124,32 @@ button {
   width: 100%;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--color-primary);
 }
 
 @media (min-width: 500px) {
-  main {
-    align-items: center;
-  }
-
-  h1 {
+  .title {
     font-size: 6rem;
   }
 
-  h2 {
+  .subtitle {
     font-size: 2rem;
   }
 
-  form {
+  .form {
     display: flex;
     padding: 0 2rem 0 0.5rem;
   }
 
-  input {
+  .input {
     font-size: 1.25rem;
     border-radius: 0.4rem 0 0 0.4rem;
     border-right: 0;
     margin-bottom: 0;
   }
 
-  button {
+  .button {
     font-size: 1.25rem;
     border-radius: 0 0.4rem 0.4rem 0;
     flex-basis: fill;
